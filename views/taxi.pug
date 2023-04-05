@@ -4,7 +4,7 @@ block content
   h1= title
   p Welcome back to #{title} modifed by Hashwanth Gogineni
 
-  - results = [{ taxi: "Suv", size: "large", cost: 300 },{ taxi: "Sedan", size: "med", cost: 150 },{ taxi: "Hatchback", size: "small", cost: 100 }];
+  - results = [{ taxi: "Suv", size: "large", cost: 300 },{ taxi: "Sedan", size: "med", cost: 200 },{ taxi: "Hatchback", size: "small", cost: 100 }];
   div.container-fluid 
     -
     div.row 
@@ -20,7 +20,7 @@ block content
                         p #{Object.keys(item)[i]}: #{item[prop]}
 
         
-        script.
-            function buy (index){
-                alert (`You purchased item ${index+1}`)    
-            }
+    script.
+        function buy (index){
+            alert (`You purchased item ${index+1}`)    
+        }
